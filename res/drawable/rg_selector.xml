@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true">
+        <shape >
+            <corners android:radius="10dp"/>
+            <!-- 头部指示器背景颜色 -->
+            <gradient android:startColor="#ffc125" android:endColor="#ffc125"/>
+            <padding android:left="5dp" android:top="5dp" android:right="5dp" android:bottom="5dp"/>
+        </shape>
+    </item>
+
+</selector>

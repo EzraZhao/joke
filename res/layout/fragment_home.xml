@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 水平竖直滚动  -->
+    <!-- <HorizontalScrollView ></HorizontalScrollView> -->
+    <!-- <ScrollView ></ScrollView> -->
+    
+    <RadioGroup android:id="@+id/rg_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#e0e0e0"
+        android:padding="8dp">
+        
+        <RadioButton android:id="@+id/recommend"
+            style="@style/headStyle"
+            android:checked="true"
+            android:text="推荐"/>
+        <RadioButton android:id="@+id/video"
+            style="@style/headStyle"
+            android:text="视频"/>
+        <RadioButton android:id="@+id/image"
+            style="@style/headStyle"
+            android:text="图片"/>
+        <RadioButton android:id="@+id/joke"
+            style="@style/headStyle"
+            android:text="段子"/>
+        <RadioButton android:id="@+id/book"
+            style="@style/headStyle"
+            android:text="订阅"/>
+        
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+    </android.support.v4.view.ViewPager>
+    
+</LinearLayout>
